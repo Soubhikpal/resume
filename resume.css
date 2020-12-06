@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
 #body-header{  
 	height: 65vh;
     opacity: 0.8;
-    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-image: url(./image/background1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -25,6 +25,8 @@ body::-webkit-scrollbar {
     margin: 0;
     margin-right: 5%;
     display: none;
+    right: 3%;
+    
 }
 .bars i {
     font-size: 2rem;
@@ -61,7 +63,7 @@ body::-webkit-scrollbar {
 
 .no-list-style li a{
     list-style: none;
-    color: white;
+    color:whitesmoke;
     text-decoration: none;
 }
 
@@ -103,7 +105,7 @@ body::-webkit-scrollbar {
 
 /*Name and Social Icons*/
 #name-social-container{
-    margin-top: 20vh;
+    margin-top: 12vh;
 }
 
 #my-name{
@@ -115,6 +117,27 @@ body::-webkit-scrollbar {
 	
 }
 
+.cv a i{
+   font-size: 1.2rem;
+   color : whitesmoke;
+   text-transform: capitalize; 
+   border-radius: 50%;
+   letter-spacing: 0.1rem;
+   margin-top: 5px;
+}
+.cv-text{
+    font-weight: 100;
+}
+.cv-text{
+    transition: color .5s, border-bottom 4s;
+}
+.cv-text:hover{
+    color: lightgrey;
+	border-bottom: 1px solid black;
+}
+.cv a i:hover{
+    color: lightgrey;
+}
 .social-icons li a i{
 	padding: 10px;
 	font-size: 1rem;
@@ -190,7 +213,7 @@ margin-right: 0.5rem;
 	font-size: 1.1rem;
 	font-weight: 100;
 	font-family: Arial, Helvetica, sans-serif;
-	color: grey;
+	color: #433E3F;
 	line-height: 28px;
 	text-align: justify;
 	margin: auto;
@@ -244,7 +267,7 @@ margin-right: 0.5rem;
     text-align: right;
 }
 
-.timeline-box::after {
+/* .timeline-box::after {
     content: '';
     position: absolute;
     width: 15px;
@@ -253,7 +276,7 @@ margin-right: 0.5rem;
     top: 25%;
     border-radius: 50%;
     z-index: 1;
-}
+} */
 
 .timeline-box:nth-child(2n) {
     left: 53%;
@@ -287,7 +310,7 @@ margin-right: 0.5rem;
     top: 12%;
     left: 50%;
     border: 1px dashed #0096fa6b;
-    height: 50%;
+    height: 80%;
     color: #433E3F;
 }
 
@@ -521,9 +544,16 @@ button:focus {
 
 
 /* Common Margin Classes */
-.mb75px {
+.mb75px{
     margin-bottom: 75px;
 }
+.mb25px{
+    margin-bottom: 25px;
+}
+.mbtop{
+    margin-top: 50px;
+}
+
 
 
 
@@ -548,6 +578,10 @@ button:focus {
 
 .mb-light-purple {
     background-color: #93738c;
+}
+
+.mb-salmon{
+    background-color: salmon;
 }
 
 
@@ -581,6 +615,7 @@ button:focus {
 
     .bars {
         display: block;
+        left: 3%;
     }
     
     
